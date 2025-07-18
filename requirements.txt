@@ -1,0 +1,16 @@
+flask
+mysql-connector-python
+gunicorn
+bcrypt
+flask-login
+flask-session
+Flask-WTF
+email-validator
+pyotp
+pyqrcode
+pypng
+pillow
+itsdangerous
+sendgrid
+python-dotenv
+Flask-Limiter

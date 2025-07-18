@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSRF Error</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/error-common.css') }}">
+    <style>
+        .error-container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1>Security Error</h1>
+        <p>Your session has expired or the request could not be verified for security reasons. Please refresh the page or log in again.</p>
+        <a class="button" href="{{ url_for('login.login') }}">Return to Login</a>
+    </div>
+</body>
+</html>
