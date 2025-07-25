@@ -17,10 +17,14 @@ export default defineConfig([
       "no-unsanitized": pluginNoUnsanitized,
     },
     rules: {
+      // ESLint core recommended rules
       ...js.configs.recommended.rules,
-      ...pluginSecurity.configs.recommended.rules,
-      ...pluginNoUnsanitized.configs.recommended.rules,
+      // Security plugin recommended rules if using ESLint 9.x and plugin supports flat config
+      ...(pluginSecurity.configs?.recommended?.rules || {}),
+      // No-unsanitized plugin recommended rules
+      ...(pluginNoUnsanitized.configs?.recommended?.rules || {}),
 
+      // Custom rules
       "security/detect-eval-with-expression": "error",
       "no-console": "warn",
     },
