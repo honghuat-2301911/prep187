@@ -4,19 +4,14 @@
     "express": "^4.21.2"
   },
   "devDependencies": {
-    "@eslint/js": "^8.57.0",
+    "@eslint/js": "^9.31.0",
     "@typescript-eslint/eslint-plugin": "^8.38.0",
     "@typescript-eslint/parser": "^8.38.0",
     "chai": "^5.1.2",
-    "eslint": "^8.57.0",
+    "eslint": "^9.31.0",
     "eslint-plugin-no-unsanitized": "^4.1.2",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-security": "^3.0.1",
-    "globals": "^16.3.0",
-    "mocha": "^11.7.1",
-    "selenium-webdriver": "^4.27.0"
-  },
-  "scripts": {
-    "test": "mocha tests/*.js"
+    "globals": "^16.3.0"
   }
 }
