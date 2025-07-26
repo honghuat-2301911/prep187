@@ -1,10 +1,18 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Home</title>
+    <title>Enter a search term</title>
 </head>
 <body>
-    <h2>Welcome{% if user %}, {{ user }}{% endif %}!</h2>
-    <p>You are now logged in.</p>
+    <h2>Enter a search term</h2>
+    <form method="post">
+        <label>Search:</label>
+        <input type="text" name="searchterm" required>
+        <br><br>
+        <button type="submit">Search</button>
+    </form>
+    {% if message %}
+        <p style="color:red;">{{ message }}</p>
+    {% endif %}
 </body>
 </html>

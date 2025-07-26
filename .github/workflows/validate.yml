@@ -45,7 +45,7 @@ jobs:
       - name: Test Flask route via Nginx
         run: |
           curl -s -o response.html http://localhost:8080/
-          grep "Login Page" response.html
+          grep "Enter a search term" response.html
     
       - name: Stop containers
         run: |
