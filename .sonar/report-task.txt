@@ -1,0 +1,6 @@
+projectKey=group23
+serverUrl=http://localhost:9000
+serverVersion=25.7.0.110598
+dashboardUrl=http://localhost:9000/dashboard?id=group23
+ceTaskId=b4605ae4-ce07-47e0-a0a9-f2076f693297
+ceTaskUrl=http://localhost:9000/api/ce/task?id=b4605ae4-ce07-47e0-a0a9-f2076f693297
